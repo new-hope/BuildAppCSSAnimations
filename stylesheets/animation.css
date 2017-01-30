@@ -1,0 +1,75 @@
+/* Global Animations */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}	
+	to {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-300px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+/* /Global Animations */
+
+
+/* Logo Animations */
+
+.index .brand-top {
+	animation: fadeIn 0.5s, slideDown 0.5s;
+}
+
+.index .main {
+	animation: slideUp 0.75s;
+}
+
+/* /Logo Animations */
+
+
+/* Button Animations */
+
+.btn-a {
+	transition: all 0.3s;
+}
+
+/* /Button Animations */
+
+
+/* Quiz Page Animations */
+
+.answer-link {
+	transition: all 0.5s;
+}
+
+.answer-link .is-selected {
+	transition: transform 0.3s;
+	transform: scale(1.025);
+}
+
+/* /Quiz Page Animations */
+
+
+/* Results Page Animations */
+
+
+
+/* /Results Page Animations */
