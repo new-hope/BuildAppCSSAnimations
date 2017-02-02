@@ -29,6 +29,40 @@
 	}
 }
 
+@keyframes zoomIn {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes tada {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	
+	10%, 20% {
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+	
+	30%, 50%, 70%, 90% {
+		transform: scale3d(1.1, 1.1, 1.) rotate3d(0, 0, 1, 3deg);
+	}
+	
+	40%, 60%, 80% {
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+	
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
 /* /Global Animations */
 
 
@@ -47,8 +81,8 @@
 
 /* Button Animations */
 
-.btn-a {
-	transition: all 0.3s;
+.btn {
+	transition: all 2s;
 }
 
 /* /Button Animations */
@@ -60,7 +94,7 @@
 	transition: all 0.5s;
 }
 
-.answer-link .is-selected {
+.answer-link.is-selected {
 	transition: transform 0.3s;
 	transform: scale(1.025);
 }
@@ -70,6 +104,24 @@
 
 /* Results Page Animations */
 
+.character {
+	visibility: hidden;
+	opacity: 0;
+	animation: fadeIn 0.5s forwards, tada 1s;
+}
 
+.character-description {
+	visibility: hidden;
+	opacity: 0;
+	animation: fadeIn 0.75s 2s forwards;
+}
+
+.share {
+	animation: zoomIn 1s 1.5s forwards;
+}
+
+.brand-bottom {
+	transition: opacity 0.5s;
+}
 
 /* /Results Page Animations */

@@ -214,6 +214,10 @@ html {
   margin: 0 auto;
 }
 
+.character-description {
+	font-size: 90%;
+}
+
 .characterList {
 	list-style-type: none;
 	margin: 0;
